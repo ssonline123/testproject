@@ -1,0 +1,2113 @@
+/*
+
+MODULES.CSS
+
+- Only use class selectors to decouple HTML and CSS
+- Use child selectors or descendant selectors within modules for name spacing
+- Use percentages when declaring padding, margin and widths
+- Use default colors on links and highlights, extend colors in themes.css
+
+*/
+
+
+
+/* ============================================================================
+   Icons
+   ========================================================================= */
+
+.icon {
+  background: url(../images/icons.png) no-repeat 0 0;
+  padding: 1px 0 3px 23px;
+  padding: 3px 0 3px 23px \0/; /* Fix: IE8+9 */
+  *padding: 4px 0 4px 23px; /* Fix: IE7 */
+  color: #3c3c3c;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 12px;
+  width: 20px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .icon {
+           background-image:url(../images/icons2x.png);
+      -moz-background-size: 30px 2800px;
+       -ie-background-size: 30px 2800px;
+        -o-background-size: 30px 2800px;
+   -webkit-background-size: 30px 2800px;
+           background-size: 30px 2800px;
+  }
+}
+
+.arrow-right {
+  background-position: 0 0;
+}
+
+.download {
+  background-position: 0 -20px;
+}
+
+.arrow-down {
+  background-position: 0 -40px;
+}
+
+.arrow-up {
+  background-position: 0 -60px;
+}
+
+.home {
+  background-position: -6px -90px;
+}
+
+.nav-arrow-big {
+  background-position: 0 -100px;
+}
+
+.nav-arrow-small {
+  background-position: 0 -120px;
+}
+
+.arrow-left {
+  background-position: 0 -240px;
+}
+
+.plus {
+  background-position: 0 -260px;
+}
+
+.pointer-down {
+  background-position: 0 -280px;
+}
+
+.notification {
+  background-position: 0 -300px;
+}
+
+.arrow-down-color,
+.arrow-up-color {
+  background: url(../images/icons-about.png) no-repeat 0 0;
+  *padding: 4px 0 2px 23px; /* Fix: IE7 */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .arrow-down-color,
+  .arrow-up-color {
+           background-image:url(../images/icons-about2x.png);
+      -moz-background-size: 30px 500px;
+       -ie-background-size: 30px 500px;
+        -o-background-size: 30px 500px;
+   -webkit-background-size: 30px 500px;
+           background-size: 30px 500px;
+  }
+}
+
+.arrow-up-color {
+  background-position: 0 -20px;
+}
+
+
+
+/* ============================================================================
+   Dividers
+   ========================================================================= */
+
+.divider {
+  width: 100%;
+  position: relative;
+  clear: both;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  border-left: 0;
+  border-right: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px 0 0 0;
+  line-height: 20px;
+}
+
+h2.divider {
+  margin-bottom: 0;
+}
+
+.divider.theme-borders {
+  border-bottom: 0;
+}
+
+.divider.one-line {
+  border-bottom: 0;
+}
+
+.splash-in-depth-highlights {
+  position: absolute;
+  display: block;
+  top: -35px;
+  right: 0.5%;
+  background: url(../images/splash-in-depth-highlights-default.png) no-repeat 0 0;
+  height: 92px;
+  width: 92px;
+}
+
+
+
+/* ============================================================================
+   Introduction - Section
+   ========================================================================= */
+
+.intro {
+  position: relative;
+
+  color: #212121;
+  background: url(../images/bg-section-intro.png) no-repeat 0 0;
+  /*
+  background-color: #f6f6f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f6f6f6));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f6f6f6);
+  background-image:    -moz-linear-gradient(top, #ffffff, #f6f6f6);
+  background-image:     -ms-linear-gradient(top, #ffffff, #f6f6f6);
+  background-image:      -o-linear-gradient(top, #ffffff, #f6f6f6);
+  background-image:         linear-gradient(to bottom, #ffffff, #f6f6f6);
+
+  -webkit-border-top-right-radius: 30px;
+  -moz-border-radius-topright: 30px;
+  border-top-right-radius: 30px;
+  */
+
+  font-size: 16px;
+  line-height: 26px;
+  padding: 50px 20px 40px 60px;
+
+  margin-top: -50px;
+  *margin-top: 0; /* IE7 and below */
+}
+
+.intro > .hd {
+  color: #000;
+  text-transform: uppercase;
+  margin: 30px 0 10px 0;
+  font-size: 45px;
+
+  /* hide text and replace with logo */
+  /*
+  background: url(../images/heading-gemalto-heart-banks.png) no-repeat 0 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+   */
+}
+
+.intro-cta {
+  float: right;
+  margin: 15px 60px 40px 70px;
+}
+
+.intro-cta-text-aligned {
+  float: right;
+  margin: 65px 60px 40px 60px;
+  line-height: 1;
+}
+
+.intro-read-more {
+  display: block;
+  width: 85px;
+  background: url(../images/icon-read-more-arrow.png) right 5px no-repeat;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #666;
+}
+
+.intro-all-brands {
+  clear: both;
+  padding: 8px 10px;
+}
+
+.intro-all-brands a {
+  text-transform: none;
+  color: #484848;
+}
+
+
+
+/* ============================================================================
+   Entrance
+   ========================================================================= */
+
+.entrance {
+  position: relative;
+  min-height: 140px;
+  background: #fff;
+  width: 93.4%;
+  border-bottom: 1px solid #dedede;
+  padding: 2% 3.3%;
+  margin-bottom: 10px;
+}
+
+.entrance.last {
+  margin-bottom: 40px;
+}
+
+
+.entrance > .hd {
+  margin-top: 20px;
+  max-width: 50%;
+  color: #212121;
+  font-weight: 300;
+  font-size: 35px;
+}
+
+.entrance > .bd.is-collapsed {
+  display: none;
+}
+
+.entrance .text {
+  width: 55%;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.entrance .quote {
+  font-weight: bold;
+  padding-left: 25px;
+  line-height: 1.3;
+}
+
+.entrance .quote-src {
+  padding-left: 25px;
+  line-height: 1.3;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+/* tabs */
+
+.entrance-tab {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+
+  display: inline-block;
+  *width: 250px;
+
+  overflow: hidden;
+  margin: 15px 0 0 0;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  background-color: #dbdbdb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#dbdbdb)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #dbdbdb); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #f7f7f7, #dbdbdb); /* FF3.6+ */
+  background-image:     -ms-linear-gradient(top, #f7f7f7, #dbdbdb); /* IE10 */
+  background-image:      -o-linear-gradient(top, #f7f7f7, #dbdbdb); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #f7f7f7, #dbdbdb);
+
+  /* Prevent bg color from leaking outside the border: */
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+}
+
+.entrance-tab > a {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .3);
+  /* border-bottom: 3px solid #000; */
+  padding: 8px 6px 4px 18px;
+  font-size: 12px;
+  font-family: "ff-din-web-pro", "ff-din-web", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+
+/* horizontal product list */
+
+.entrance-product-heading {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.entrance-product-list {
+  margin: 20px 0 50px 0;
+  padding: 0;
+  width: 100%;
+}
+
+.entrance-product-list > .item {
+  float: left;
+  width: 15.6%;
+  list-style-type: none;
+  margin: 0 2.2% 0 0;
+  padding: 0 2.2% 0 0;
+  border-right: 1px solid #e5e5e5;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.entrance-product-list > .last {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.entrance-product-list .name,
+.entrance-product-list .category {
+  text-transform: uppercase;
+}
+
+.entrance-product-list .desc {
+  margin: 4px 0 1em 0;
+}
+
+
+/* ============================================================================
+   Sub page Entrance (white blocks)
+   ========================================================================= */
+
+.sub-entrances {
+  overflow: hidden;
+  margin: -7px 0 40px 0;
+}
+
+.sub-entrances ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sub-entrances a {
+  display: block;
+  font-size: 13px;
+  color: #515151;
+  text-decoration: none;
+  padding: 5% 5%;
+  margin-bottom: 0.75%;
+  width: 89.5%;
+  background: #fff url(../images/icon-sub-entrance.gif) no-repeat 95% 50%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sub-entrances .col-1 li:first-child a {
+  border-top-left-radius: 10px;
+}
+
+.sub-entrances .col-1 {
+  float: left;
+  width: 50%;
+}
+
+.sub-entrances .col-2 {
+  float: left;
+  width: 50%;
+}
+
+
+
+/* ============================================================================
+   Solution product list
+   ========================================================================= */
+
+.solution-product-heading {
+  font-size: 26px;
+  font-weight: normal;
+}
+
+.solution-product-list {
+  margin: 20px 0 50px 0;
+  padding: 0;
+  width: 100%;
+}
+
+.solution-product-list > .item {
+  float: left;
+  width: 15.6%;
+  list-style-type: none;
+  margin: 0 2.2% 0 0;
+  padding: 0 2.2% 0 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.solution-product-list > .last {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.solution-product-list .name,
+.solution-product-list .category {
+  text-transform: uppercase;
+}
+
+.solution-product-list .image {
+  margin: 10px 0;
+}
+.solution-product-list .desc {
+  margin: 4px 0 1em 0;
+}
+
+
+
+/* ============================================================================
+   Box - Hot Topics - 100%
+   ========================================================================= */
+
+.box-topics-100 {
+  clear: both;
+  background: #fff;
+  width: 100%;
+  margin: 0 0 40px 0;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.box-topics-100 > .hd {
+  margin: 0;
+  padding: 20px 3.3% 0.2em 3.3%;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.box-topics-100 > .bd {
+  padding: 0 3.3% 1em 3.3%;
+}
+
+.box-topics-100 a {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.box-topics-100 a.tag1 {
+  color: #333;
+  font-weight: 400;
+}
+
+.box-topics-100 a.tag2 {
+ color: #555;
+  font-weight: 500;
+}
+
+.box-topics-100 a.tag3 {
+  color: #777;
+  font-weight: 600;
+}
+
+
+
+/* ============================================================================
+   Box - White - 100%
+   ========================================================================= */
+
+.box-100 {
+  clear: both;
+  background: #fff;
+  min-height: 200px;
+  width: 100%;
+  margin: 0 0 40px 0;
+}
+
+.box-100.border-bottom {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.box-100 > .hd {
+  margin: 0;
+  padding: 20px 3.3% 0.5em 3.3%;
+}
+
+.box-100 > .bd {
+  padding: 0 3.3% 0.5em 3.3%;
+}
+
+.box-100.no-min-height {
+  min-height: 0;
+}
+
+
+/* Grid */
+
+.box-100.grid {
+  padding: 5% 3%;
+  width: 94%
+}
+
+
+
+/* ============================================================================
+   Box - 75%
+   ========================================================================= */
+
+ .box-75 {
+   width: 75%;
+ }
+
+
+
+/* ============================================================================
+   Box - White - 66%
+   ========================================================================= */
+
+.box-66 {
+  float: left;
+  width: 64%;
+  margin: 0 2% 40px 0;
+  padding: 0 3.3% 1% 0;
+  color: #3c3c3c;
+  line-height: 21px;
+}
+
+.box-66.last {
+  margin-right: 0;
+}
+
+.box-66 > .hd {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+.box-66 > .bd {
+  padding: 1em 6% 0 6%;
+  font-size: 13px;
+}
+
+
+/* Right border */
+
+.box-66.border-right {
+  border-right: 1px solid #e3e3e3;
+  margin: 3% 2% 40px 0;
+  margin: 3% 0 40px 0 \0/; /* Fix: IE8+9 */
+  *margin: 3% 0 40px 0; /* Fix: IE7 */
+}
+
+.box-66.border-right > .hd {
+  margin-top: 0;
+}
+
+
+/* No bottom margin when inside a 100% box */
+.box-100 .box-66 {
+  margin-bottom: 2em;
+}
+
+
+
+/* ============================================================================
+   Box - White - 50%
+   ========================================================================= */
+
+.box-50 {
+  float: left;
+  width: 42.4%;
+  margin: 0 2% 40px 0;
+  padding: 1% 3.2%;
+  color: #3c3c3c;
+  line-height: 21px;
+}
+
+.box-50.last {
+  margin-right: 0;
+}
+
+.box-50 > .hd {
+  font-size: 17px;
+  line-height: 23px;
+  margin-bottom: 0.5em;
+}
+
+
+/* No bottom margin when inside a 100% box */
+
+.box-100 .box-50 {
+  margin-bottom: 0;
+}
+
+
+/* No padding (used on Sub pages) */
+
+.box-50.no-padding {
+  width: 47.5%;
+  margin: 0 5% 40px 0;
+  padding: 1% 0;
+}
+
+.box-50.no-padding > .hd {
+  font-size: 27px;
+  margin-top: 0.5em;
+}
+
+.sub-content .box-50.last {
+  margin-right: 0;
+}
+
+
+
+/* Box - Gray (extends .box-50) - 50% */
+
+.box-50.bg-gray {
+  min-height: 280px;
+  background: #efefef;
+  margin-bottom: 40px;
+}
+
+
+
+/* ============================================================================
+   Box - White - 33%
+   ========================================================================= */
+
+.box-33 {
+  float: left;
+  /* min-height: 200px; */
+  width: 25.4%;
+  padding: 1% 3.3%;
+  margin: 0 0 40px 0;
+ }
+
+.box-33 > .bd {
+  padding-top: 0.5em;
+  font-size: 13px;
+}
+
+.box-100 > .box-33:last-child,
+.box-100 > .box-33.last {
+  padding-top: 1.1em;
+  padding: 1% 3.3% 1% 1%;
+}
+
+.box-33 .hd {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 1em;
+}
+
+.box-33 .bd ul {
+  margin: 0 0 0 1.5em;
+  padding: 0;
+}
+
+
+/* Right border */
+
+.box-33.border-right,
+.box-33.no-border-right {
+  width: 27.5%;
+  padding: 1% 3.3% 1% 0;
+  margin: 3% 2% 40px 0;
+  border-right: 1px solid #e3e3e3;
+}
+
+.box-33.no-border-right {
+  border-right: 0;
+}
+
+.box-33.border-right > .hd,
+.box-33.no-border-right > .hd {
+  margin-top: 0;
+}
+
+
+/* No padding (used on Sub pages) */
+
+.box-33.no-padding {
+  background: #fff;
+  width: 30.3030303%;
+  margin: 0 4.5% 40px 0;
+  padding: 0;
+}
+
+.box-33.no-padding > .hd {
+  font-size: 27px;
+  margin-top: 0.5em;
+}
+
+.box-33.no-padding > .bd {
+  padding: 2% 5%;
+  color: #515151;
+}
+
+.sub-content .box-33.last,
+.sub-content .box-33.no-padding.last {
+  margin-right: 0;
+  float: right;
+}
+
+
+/* Grid */
+
+.box-100.grid .box-33 {
+  margin: 0;
+  width: 26.4%;
+}
+
+.box-100.grid .box-33.first {
+  clear: left;
+}
+
+.box-100.grid .box-33 .large-text {
+  font-size: 18px;
+  color: #303030;
+}
+
+
+.box-33.no-min-height {
+  min-height: 0;
+}
+
+
+
+
+/* Box - Focus box (extends .box-33) - 33% */
+
+.focus {
+  background: #eaeaea;
+  min-height: 155px;
+  height: 155px;
+  overflow: hidden;
+  width: 26%;
+  padding: 5px 2.5%;
+  margin: 0 3.5% 40px 0;
+}
+
+.focus.image-only {
+  width: 31%;
+  min-height: 165px;
+  height: 165px;
+  padding: 0;
+}
+
+.focus.last {
+  margin-right: 0;
+}
+
+
+
+/* ============================================================================
+   Box - White - 25%
+   ========================================================================= */
+
+.box-25 {
+  float: left;
+  width: 21.6%;
+  padding: 1% 3.3% 0 0;
+  margin: 0 0 20px 0;
+  line-height: 2;
+ }
+
+
+
+/* ============================================================================
+   Box - About - 7 boxes
+   ========================================================================= */
+
+.box-about {
+  display: block;
+  position: relative;
+  width: 89px;
+  height: 97px;
+  float: left;
+  background-color: #fff;
+  margin: 0 0 10px 20px;
+  padding: 20px 14px 0 14px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.4;
+  color: #515151;
+  text-decoration: none;
+  font-family: "ff-din-web-pro", "ff-din-web", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.box-about-heading {
+  float: left;
+  margin: 0 0 10px 20px;
+}
+
+.box-about-heading.first,
+.box-about-heading .theme-borders {
+  width: 117px;
+  height: 23px;
+  background-color: transparent;
+  border-bottom: 3px solid;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: normal;
+  font-family: "ff-din-web-pro", "ff-din-web", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.box-about-heading.first,
+.box-about.first {
+  background-color: transparent;
+  margin-left: 0;
+  clear: left;
+  font-weight: normal;
+  font-size: 10px;
+  text-align: left;
+  padding: 0;
+  width: 117px;
+  border-bottom: 3px solid #dedede;
+}
+
+.box-about.first {
+  padding-top: 40px;
+  height: 87px;
+}
+
+.box-about.empty {
+  background: transparent;
+}
+
+.box-about .arrow-down-color,
+.box-about .arrow-up-color {
+  width: 30px;
+  height: 20px;
+  margin-left: -15px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+}
+
+.box-about.empty .arrow-down-color {
+  display: none;
+}
+
+.box-about.open {
+  background-color: #ececec;
+  margin-bottom: 0;
+  height: 107px;
+}
+
+.box-about-sub {
+  display: none;
+  float: left;
+  height: 146px;
+  margin-left: 20px;
+  width: 743px;
+  background-color: #fff;
+  position: relative;
+  padding: 30px;
+}
+
+.box-about-sub .arrow-marker {
+  background: transparent url(../images/about-open-arrow.png) 0 0 no-repeat;
+  width: 117px;
+  height: 19px;
+  position: absolute;
+  top: -19px;
+}
+
+.box-about-sub.col2 .arrow-marker {
+  left: 0;
+}
+
+.box-about-sub.col3 .arrow-marker {
+  left: 137px;
+}
+
+.box-about-sub.col4 .arrow-marker {
+  left: 274px;
+}
+
+.box-about-sub.col5 .arrow-marker {
+  left: 411px;
+}
+
+.box-about-sub.col6 .arrow-marker {
+  left: 548px;
+}
+
+.box-about-sub.col7 .arrow-marker {
+  left: 685px;
+}
+
+.box-about-sub .hd {
+  text-transform: uppercase;
+  font-family: "ff-din-web-pro", "ff-din-web", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 13px;
+  height: 30px;
+  font-weight: normal !important;
+  margin-top: 0 !important;
+  line-height: 23px !important;
+}
+
+.box-about-sub .hd .icon {
+  float: left;
+  padding: 0;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.box-about-sub ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box-about-sub ul a {
+  text-decoration: underline;
+}
+
+.box-about-sub img {
+  position: absolute;
+  bottom: 20px;
+  left: 66%;
+}
+
+
+
+/* ============================================================================
+   Box - Solution box with top/bottom borders - 100%
+   ========================================================================= */
+
+.box-solution-100 {
+  float: left;
+  background: #fff;
+  width: 93.4%;
+  margin: 0 0 40px 0;
+  padding: 1% 3.3% 3% 3.3%;
+  color: #3c3c3c;
+  line-height: 21px;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+/* Less bottom margin when grouped with other similar boxes */
+.box-100 .box-solution-100 {
+  margin-bottom: 30px;
+}
+
+/* No right/left padding on sub pages */
+.sub-content .box-solution-100 {
+  width: 100%;
+  padding: 1% 0 3% 0;
+  background: none;
+}
+
+.box-solution-100 > .hd {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.box-solution-100 > .hd-small {
+  margin-top: 20px;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.box-solution-100 > .bd {
+  padding-top: 0.5em;
+  font-size: 13px;
+}
+
+.box-solution-100 > .bd b {
+  font-size: 15px;
+}
+
+
+
+/* ============================================================================
+   Box - Solution box with top/bottom borders - 50%
+   ========================================================================= */
+
+.box-solution-50 {
+  float: left;
+  background: #fff;
+  width: 42.4%;
+  margin: 0 2% 30px 0;
+  padding: 1% 3.3% 3% 3.3%;
+  color: #3c3c3c;
+  line-height: 21px;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+/* Normal margin when used on sub page */
+.sub-content .box-solution-50 {
+    margin-bottom: 40px;
+}
+
+.box-solution-50 > .hd {
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.box-solution-50 > .bd {
+  padding-top: 0.5em;
+  font-size: 13px;
+}
+
+.box-solution-50 > .bd b {
+  font-size: 15px;
+}
+
+.box-solution-50.last {
+  margin-right: 0;
+}
+
+
+
+/* ============================================================================
+   Box - Black box - 100%
+   ========================================================================= */
+
+.box-black-100 {
+  position: relative;
+  float: left;
+  background: #000 url(../images/bg-box-black.png) repeat-x 0 0;
+  width: 93.4%;
+  margin: 0 0 40px 0;
+  padding: 10px 3.3% 10px 3.3%;
+  color: #fff;
+  min-height: 248px;
+}
+
+.box-black-100 > img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.box-black-100 > .hd {
+  font-size: 33px;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.box-black-100 > .bd {
+  margin-top: 1em;
+  width: 60%;
+}
+
+.box-black-100 > .bd a {
+  color: #fff;
+}
+
+
+/* ============================================================================
+   Box - White box - 100%
+   ========================================================================= */
+
+.box-white-100 {
+  position: relative;
+  float: left;
+  background: #FFF;
+  width: 93.4%;
+  margin: 0 0 40px 0;
+  padding: 10px 3.3% 10px 3.3%;
+  color: #3C3C3C;
+  min-height: 248px;
+}
+
+.box-white-100 > img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.box-white-100 > .hd {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.box-white-100 > .bd {
+  margin-top: 1em;
+  width: 50%;
+}
+
+.box-white-100 > .bd a {
+  color: #3C3C3C;
+}
+
+
+
+
+/* ============================================================================
+   Social
+   ========================================================================= */
+
+.social {
+  float: left;
+  background: #fff;
+  width: 100%;
+  padding: 1% 0 3% 0;
+  color: #3c3c3c;
+  line-height: 21px;
+  border-top: 1px solid #dedede;
+}
+
+.social.is-collapsed {
+  height: 110px;
+  overflow: hidden;
+}
+
+.social.is-expanded {
+  height: auto;
+}
+
+.social-more {
+  float: right;
+  width: 60px;
+  height: 80px;
+  border-left: 1px solid #e0e0e0;
+  padding: 20px 30px 0 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.social-item {
+  padding-bottom: 10px;
+}
+
+.social-item.last {
+  padding-bottom: 0;
+}
+.social-item > .hd {
+  margin-top: 20px;
+  font-size: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.social-item > time {
+  font-size: 11px;
+  display: block;
+  margin: 4px 0 0 3.3%;
+}
+
+.social-item > .bd {
+  padding: 0.5em 27% 0 3.3%;
+  font-size: 20px;
+  line-height: 25px;
+  border-bottom: 1px solid #dedede;
+  min-height: 95px;
+}
+
+.social-item.twitter > .bd {
+  background: url(../images/social-twitter.png) no-repeat 90% top;
+}
+
+.social-item.facebook > .bd {
+  background: url(../images/social-facebook.png) no-repeat 90% top;
+}
+
+.social-item.gemaltoblog > .bd {
+  background: url(../images/social-gemaltoblog.png) no-repeat 90% top;
+}
+
+
+/* Home page */
+
+.social-home-item {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #3C3C3C;
+  margin-top: 1em;
+}
+
+.social-home-item a {
+  color: #3C3C3C;
+}
+
+.social-home-item time {
+  font-weight: bold;
+}
+
+.social-home-item.hidden {
+  display: none;
+}
+
+
+/* Footer */
+
+.social-footer {
+  clear: both;
+  height: 30px;
+  background: #fff;
+}
+
+.social-footer.with-newsletter {
+  height: 80px;
+}
+
+.social-signup {
+  width: 680px;
+  float: left;
+}
+
+.social-signup p {
+  padding: 10px 0 2px 0;
+}
+
+.social-signup img {
+  float: left;
+}
+
+.social-signup .text {
+  background: none repeat scroll 0 0 transparent;
+  border: 1px solid #ccc;
+  padding: 6px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 11px;
+  color: #aaa;
+  width: 200px;
+  margin-bottom: -2px;
+}
+
+.social-signup .submit {
+  background: #111;
+  color: #fff;
+  border: 0;
+  padding: 4px 10px 5px 10px;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* Fix for Firefox position error */
+@-moz-document url-prefix() {
+  .social-signup .submit {
+    padding: 4px 10px 7px 10px;
+  }
+}
+
+.social-follow {
+  float: left;
+  display: block;
+  margin-left: 74%;
+  margin-right: 10px;
+  font-weight: 400;
+  font-family: "ff-din-web-pro", "ff-din-web", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.social-icons {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.social-footer.with-newsletter .social-follow {
+  float: none;
+  margin-left: 0;
+  padding: 10px 0 5px 0;
+}
+
+.social-footer.with-newsletter .social-icons {
+  float: none;
+}
+
+
+/* Read more links */
+
+.social-navigation {
+  float: left;
+  width: 100%;
+  background: #f1f1f1;
+  margin: 0 0 40px 0;
+}
+
+.social-navigation.home {
+  margin: 0;
+  overflow: hidden;
+}
+
+.social-navigation .hd {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.social-updates,
+.social-press,
+.social-events {
+  float: left;
+  width: 43%; /* 27% for 3 columns; 43% for two */
+  padding: 1% 2% 1% 0;
+  margin: 2% 0 2% 3.3%;
+  border-right: 1px solid #e2e2e2;
+}
+
+.social-updates.home,
+.social-press.home,
+.social-events.home {
+  width: 27%; 
+}
+
+.social-events {
+  border: 0;
+}
+
+.social-home-more,
+.social-home-less {
+  background: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+.social-home-more img,
+.social-home-less img {
+  padding: 7px 0 0 0;
+  cursor: pointer;
+}
+
+
+/* ============================================================================
+   Tabs
+   ========================================================================= */
+
+.tabs .hd {
+  font-size: 20px;
+}
+
+.tabs-items {
+  margin: 0 0 40px 0;
+  padding: 0 0 0px 0;
+  list-style: none;
+  background: #fff;
+}
+
+.tabs-item {
+  clear: both;
+  min-height: 180px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.tabs-item.starred {
+  background: transparent url(../images/star-default.png) right 0 no-repeat;
+}
+
+.tabs-item > p {
+  padding-right: 50px;
+  margin-left: 30px;
+}
+
+.tabs-item:last-child {
+  border-bottom: 0;
+}
+
+.tabs-item > a {
+  margin: 20px 30px 0 30px;
+  float: left;
+}
+
+.tabs-item > a.image-shadow {
+  display: block;
+  height: 140px;
+  padding: 0 15px;
+  margin: 30px 15px 0 15px;
+  background: url(../images/bg-tabs-shadow.png) no-repeat 0 bottom;
+}
+
+.tabs-item > .hd {
+  font-size: 17px;
+  padding-top: 25px;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
+.tabs-headings {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color:#e7e7e7;
+  -webkit-border-top-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  border-top-right-radius: 7px;
+}
+
+.tabs-headings a:focus {
+  outline: none;
+}
+
+.tabs-headings > li {
+  float: left;
+  background: #eeeeee url(../images/banks-downloads-tabs-divider.png) 0 0 no-repeat;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  border-top-right-radius: 7px;
+}
+
+.tabs-headings > li > a:hover {
+  -webkit-border-top-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  border-top-right-radius: 7px;
+  color: #000;
+}
+
+.tabs-headings > .first {
+  -webkit-border-top-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  border-top-left-radius: 7px;
+}
+
+.tabs-headings > .current {
+  background: #eeeeee;
+}
+
+.tabs-headings > .current > a {
+  -webkit-border-top-left-radius: 7px;
+  -moz-border-radius-topleft: 7px;
+  border-top-left-radius: 7px;
+  -webkit-border-top-right-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  border-top-right-radius: 7px;
+  background: #ffffff;
+}
+
+.tabs-headings > .no-radius {
+  -webkit-border-top-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  border-top-right-radius: 0;
+}
+
+.tabs-headings > li > a {
+  display: block;
+  padding: 4px 0 2px 20px;
+  font-size: 13px;
+  color: #515151;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.tabs-headings .tab-1 {
+  width: 100%;
+}
+
+.tabs-headings .tab-2 {
+  width: 50%;
+}
+
+.tabs-headings .tab-3 {
+  width: 33.333333333%;
+}
+
+.tabs-headings .tab-4 {
+  width: 25%;
+}
+
+.tabs-headings .tab-5 {
+  width: 20%;
+}
+
+.tabs-headings .tab-6 {
+  width: 16.666666666%;
+}
+
+.tabs-headings .tab-7 {
+  width: 14.285714286%;
+}
+
+.tabs-headings .tab-8 {
+  width: 12.5%;
+}
+
+
+
+/* ============================================================================
+   Tabs - Events (extends Tabs)
+   ========================================================================= */
+
+.tabs-items {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.tabs-item.event {
+  clear: both;
+  min-height: 120px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.tabs-item.event:last-child {
+  border-bottom: 0;
+}
+
+.tabs-item.event .date {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background: url("/_dotcom_template/images/icon-date.png") no-repeat;
+  margin-top: 5px;
+}
+
+.tabs-item.event .date .date-month {
+  position: absolute;
+  width: 65px;
+  text-align: center;
+  top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.tabs-item.event .date .date-day {
+  position: absolute;
+  width: 65px;
+  text-align: center;
+  top: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fa821e;
+}
+
+.tabs-item.event a.icon {
+  line-height: 1.8;
+}
+
+.tabs-item.event p, .tabs-item.event ul {
+  margin-left: 130px;
+}
+
+.events-more,
+.events-less {
+  background: #eaeaea;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.events-more img,
+.events-less img {
+  padding: 7px 0 0 0;
+  cursor: pointer;
+}
+
+.tabs-item.event.hidden {
+  display: none;
+}
+
+
+
+
+/* ============================================================================
+   Inspiration - Costumer Stories
+   ========================================================================= */
+
+.inspiration {
+  border-top: 1px solid #dedede;
+  padding-bottom: 30px;
+}
+
+.inspiration h2 {
+  font-size: 27px;
+  margin: 30px 0 5px 0;
+}
+
+.inspiration .tags {
+  font-family: "ff-din-web-pro", "ff-din-web", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.inspiration .image {
+  position: relative;
+  clear: left;
+  line-height: 0;
+}
+
+.inspiration .starred {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.inspiration time {
+  float: right;
+}
+
+.inspiration .tags {
+  float: left;
+  text-transform: uppercase;
+}
+
+.inspiration time,
+.inspiration .tags {
+  font-size: 12px;
+  padding: 7px 0 5px 0;
+}
+
+.inspiration .tags a {
+  color: #0E0500;
+  text-decoration: none;
+}
+
+.inspiration-tags {
+  min-height: 85px;
+  background: transparent url(../images/tags-bg.png) 0 bottom no-repeat;
+  padding: 15px 20px 20px 20px;
+  margin-bottom: 40px;
+}
+
+.inspiration-tags p {
+  padding-top: 10px;
+}
+
+.inspiration-tags ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.inspiration-tags li {
+  display: inline;
+  line-height: 1.6;
+}
+
+.inspiration-tags li.first a {
+  font-weight: bold;
+}
+
+.inspiration-tags li,
+.inspiration-tags a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.inspiration .tags a:hover,
+.inspiration-tags a:hover {
+  text-decoration: underline;
+}
+
+.inspiration.page h2 {
+  margin-top: 15px;
+}
+
+.inspiration.page {
+  border-top: 0;
+  border-bottom: 1px solid #DFDFDF;
+  margin-bottom: 10px;
+}
+
+.inspiration.page h1 {
+  margin-bottom: 10px;
+}
+
+.inspiration.page time {
+  float: none;
+  padding: 0 0 5px 0;
+  display: block;
+}
+
+
+
+/* ============================================================================
+   Solutions - List of sub pages
+   ========================================================================= */
+
+.solution-subpages {
+  margin: 0;
+  padding: 0 0 40px 0;
+  list-style: none;
+}
+
+.solution-subpages-item {
+  clear: both;
+  min-height: 180px;
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.solution-subpages-item:last-child {
+  border-bottom: 0;
+}
+
+.solution-subpages-item > a {
+  margin: 10px 20px 10px 0;
+  float: left;
+}
+
+.solution-subpages-item > .hd {
+  font-size: 27px;
+  font-weight: 100;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+
+
+/* ============================================================================
+   Related solutions
+   ========================================================================= */
+
+.related-solutions {
+  margin: -5px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.related-solutions-item {
+  clear: both;
+  min-height: 90px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.related-solutions-item:last-child {
+  border-bottom: 0;
+}
+
+.related-solutions-item > img {
+  margin: 10px 20px 10px 0;
+  float: left;
+}
+
+.related-solutions-item > .hd {
+  padding-top: 10px;
+}
+
+
+
+/* ============================================================================
+   Protiva - List of products
+   ========================================================================= */
+
+.protiva-list {
+  margin: 0;
+  padding: 0 0 50px 0;
+  list-style: none;
+}
+
+.protiva-list-item {
+  clear: both;
+  background: #fff;
+  height: 154px;
+}
+
+.protiva-list-item > .image {
+  margin: 0 20px 0 0;
+  float: left;
+}
+
+.protiva-list-item > .large-icon {
+  margin: 0 20px 0 40px;
+  float: right;
+}
+
+.protiva-list-item  > .hd {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.protiva-list-item  > .bd {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+
+
+/* ============================================================================
+   Subpage Image Slideshow
+   ========================================================================= */
+
+.sub-page-slideshow {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.sub-page-slideshow .indicator {
+  display: block;
+  margin: 0;
+  padding: 5px 0 5px 40px;
+  font-size: 12px;
+  background: url(/investors/images/investors-top-bg.png) no-repeat;
+  height: 40px;
+}
+
+.sub-page-slideshow .indicator li {
+  float: left;
+  margin-right: 30px;
+  font-weight: bold;
+  color: #ababab;
+}
+
+.sub-page-slideshow .indicator li.current {
+  color: #fa821e;
+}
+
+.sub-page-slideshow .sub-page-slideshow-images {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+
+.sub-page-slideshow-previous {
+  position: absolute;
+  top: 135px;
+  left: 20px;
+}
+
+.sub-page-slideshow-next {
+  position: absolute;
+  top: 135px;
+  right: 20px;
+}
+
+/* For screens < 950 px */
+@media screen and (max-width: 1024px) {
+
+  .previous.sub-page-slideshow-previous {
+    left: 20px;
+  }
+
+  .next.sub-page-slideshow-next {
+    left: auto;
+    right: 20px;
+  }
+
+}
+
+.sub-page-slideshow .hd {
+  font-size: 27px;
+  color: #000;
+  padding: 10px 0;
+}
+
+.sub-page-slideshow .hd .highlight{
+  color: #fa821e;
+}
+
+.sub-page-slideshow .hd {
+  margin: 0;
+}
+
+.sub-page-slideshow .bd ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+
+
+/* ============================================================================
+   Press releases
+   ========================================================================= */
+
+.press-releases {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0 0 30px 0;
+}
+
+
+
+/* ============================================================================
+   General Stock Quote classes
+   ========================================================================= */
+
+.stock-price {
+  color: #fa821e;
+  font-size: 20px;
+}
+
+.stock-quote {
+  font-size: 12px;
+}
+
+.stock-quote .stock-up-down {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+/* ============================================================================
+   Stats on shadows
+   ========================================================================= */
+
+.stats-on-shadow {
+  margin-top: 30px;
+  height: 150px;
+  position: relative;
+}
+
+.stats-on-shadow .stats {
+  width: 30%;
+  margin-right: 5%;
+  float: left;
+  background: #fff;
+}
+
+.stats-on-shadow .stats.last {
+  margin-right: 0%;
+}
+
+.stats-on-shadow .stats .figure {
+  margin: 40px 10% 0 10%;
+  padding: 0;
+  font-size: 45px;
+  font-weight: 200;
+  color: #fa821e;
+}
+
+.stats-on-shadow .stats .figure .small {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  line-height: 10px;
+}
+
+.stats-on-shadow .stats .text {
+  margin: 10px 10% 20px 12%;
+  padding: 0;
+  font-size: 14px;
+  color: #515151;
+}
+
+
+/* ============================================================================
+   Downloads List
+   ========================================================================= */
+
+.downloads-list {
+  margin: 0;
+  padding: 0 0 30px 0;
+  list-style: none;
+}
+
+.downloads-list li {
+  width: 240px;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 4px;
+  margin-left: -4px;
+}
+
+.downloads-list li:last-child {
+  border: 0;
+}
+
+.box-33 .bd .downloads-list {
+  margin-left: 0;
+}
+
+.box-33 .downloads-list li {
+  width: auto;
+}
+
+
+
+/* ============================================================================
+   Contact form
+   ========================================================================= */
+
+.js-contact-form {
+  display: none;
+}
+
+.form-50 {
+  width: 260px;
+  float: left;
+}
+
+.form-50.last {
+  width: 240px;
+  float: left;
+}
+
+.form-50 label,
+.form-100 label {
+  display: block;
+  margin: 12px 0 0 0;
+  font-size: 13px;
+  font-weight: bold;
+  color: #515151;
+}
+
+.form-50 label.contact-error,
+.form-100 label.contact-error {
+  color: #e00;
+}
+
+.form-50 select {
+  width: 230px;
+}
+
+.form-50 input,
+.form-100 input {
+  width: 230px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 5px;
+  -moz-box-shadow:    inset 1px 1px 4px #ccc;
+  -webkit-box-shadow: inset 1px 1px 4px #ccc;
+  box-shadow:         inset 1px 1px 4px #ccc;
+}
+
+.form-100 input {
+  width: 490px;
+  float: left;
+}
+
+.form-100 textarea {
+  width: 490px;
+  height: 120px;
+  border: 0;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 5px;
+  -moz-box-shadow:    inset 1px 1px 4px #ccc;
+  -webkit-box-shadow: inset 1px 1px 4px #ccc;
+  box-shadow:         inset 1px 1px 4px #ccc;
+}
+
+.footer-contact-text input.right {
+  margin: 20px 0 0 0;
+  background: #111;
+  border-radius: 5px;
+  color: #fff;
+  border: 0;
+  padding: 3px 20px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.form-info {
+  margin: 20px 0 10px 0;
+}
+
+/* ============================================================================
+   For other forms
+   ========================================================================= */
+
+label.pref-error,
+label.pref-error {
+  color: #e00;
+}
+
+/* ============================================================================
+   For press releases (generated by Sharepoint)
+   ========================================================================= */
+
+.sub-content {
+    font-family: "ff-din-web-pro", "ff-din-web", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}

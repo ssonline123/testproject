@@ -1,0 +1,1254 @@
+/*
+
+THEMES.CSS
+
+- Set colors of text, borders, etc based on .theme-x class
+- Only set necessary attributes, define original module otherwise.
+
+*/
+
+
+/* ============================================================================
+   Default
+   ========================================================================= */
+
+/*
+Light:  #fa821e
+Medium: #da711a
+Dark:   #924c12
+*/
+
+
+/* Headings */
+
+.theme-default h2 {
+  /* font-size: 23px; */
+  /* color: #da711a; */
+  color: #3c3c3c;
+}
+
+/* Define other headings and/or fonts here, if wanted
+
+   ...
+
+*/
+
+
+/* Tags */
+
+.theme-default .box-topics-100 .tag1 {
+  color: #fa821e; /* light color */
+}
+
+.theme-default .box-topics-100 .tag2 {
+  color: #da711a; /* medium color */
+}
+
+.theme-default .box-topics-100 .tag3 {
+  color: #924c12; /* dark color */
+}
+
+
+/* Header image */
+
+.theme-default .header-image {
+  background-color: #000;
+  background-image: url(../content/default-top.jpg);
+}
+
+.theme-default .header-image-sub {
+  background-color: #000;
+  background-image: url(../content/default-top-sub.jpg);
+}
+
+
+/* Introduction */
+
+.theme-default .intro > .hd {
+  color: #fa821e; /* light color */
+}
+
+
+/* Boxes */
+
+.theme-default .theme-borders {
+  border-color: #fa821e; /* light color */
+}
+
+.theme-default .box-solution-50 > .hd,
+.theme-default .box-solution-100 > .hd,
+.theme-default .box-black-100 > .hd {
+  color: #fa821e; /* light color */
+}
+
+.theme-default .tabs-item.starred {
+  background-image: url(../images/star-default.png);
+}
+
+.theme-default .splash-in-depth-highlights {
+  background-image: url(../images/splash-in-depth-highlights-banks.png);
+}
+
+
+/* Sub navigation */
+
+.theme-default .sub-navigation .ul-solutions > li > a {
+  color: #fa821e; /* light color */
+}
+
+.theme-default .sub-navigation .ul-section > li > a {
+  background-color: #fa821e; /* light color */
+}
+
+
+/* Footer */
+
+.theme-default .footer-callout {
+  color: #fa821e; /* light color */
+}
+
+.theme-default .footer-section {
+  background: #fa821e; /* light color */
+}
+
+.theme-default .footer-section p {
+  color: #fff;
+}
+
+.theme-default .section-home {
+  background: #924c12; /* dark color */
+  color: #fff;
+}
+
+.theme-default .section-link {
+  color: #fff;
+}
+
+.theme-default .section-solution-title {
+  color: #924c12; /* dark color */
+}
+
+.theme-default .section-solution {
+  color: #fff;
+}
+
+
+/* ============================================================================
+   Banks
+   ========================================================================= */
+
+/*
+Light:  #ea0437
+Medium: #c1002b
+Dark:   #8c1713
+*/
+
+
+/* Tags */
+
+.theme-banks .box-topics-100 .tag1 {
+  color: #ea0437; /* light color */
+}
+
+.theme-banks .box-topics-100 .tag2 {
+  color: #c1002b; /* medium color */
+}
+
+.theme-banks .box-topics-100 .tag3 {
+  color: #8c1713; /* dark color */
+}
+
+
+/* Icons */
+
+.theme-banks .arrow-right {
+  background-position: 0 -400px;
+}
+
+.theme-banks .download {
+  background-position: 0 -420px;
+}
+
+.theme-banks .arrow-down {
+  background-position: 0 -440px;
+}
+
+.theme-banks .arrow-up {
+  background-position: 0 -460px;
+}
+
+.theme-banks .sub-navigation > ul > li > ul > .current > a {
+  background-position: 0 -540px;
+}
+
+.theme-banks .nav-sub li.hover a {
+  background-position: 0 -540px;
+}
+
+.theme-banks .sub-navigation > ul > li > ul > li > ul > .current > a {
+  background-position: 0 -580px;
+}
+
+.theme-banks .arrow-left {
+  background-position: 0 -640px;
+}
+
+.theme-banks .plus {
+  background-position: 0 -660px;
+}
+
+.theme-banks .arrow-down-color {
+  background-position: 0 -40px;
+}
+
+.theme-banks .arrow-up-color {
+  background-position: 0 -60px;
+}
+
+
+/* Header image */
+
+.theme-banks .header-image {
+  background-color: #000;
+  background-image: url(../content/banks-top.jpg);
+}
+
+.theme-banks .header-image-sub {
+  background-color: #000;
+  background-image: url(../content/banks-top-sub.jpg);
+}
+
+
+/* Introduction */
+
+.theme-banks .intro > .hd {
+  color: #ea0437; /* light color */
+}
+
+
+/* Entrance */
+
+.theme-banks .entrance-tab {
+  background-color: #ce002e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ec0035), to(#ce002e)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ec0035, #ce002e); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #ec0035, #ce002e); /* FF3.6+ */
+  background-image:     -ms-linear-gradient(top, #ec0035, #ce002e); /* IE10 */
+  background-image:      -o-linear-gradient(top, #ec0035, #ce002e); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #ec0035, #ce002e);
+}
+
+.theme-banks .entrance-tab > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* Boxes */
+
+.theme-banks .theme-borders {
+  border-color: #ea0437; /* light color */
+}
+
+.theme-banks .box-solution-50 > .hd,
+.theme-banks .box-solution-100 > .hd,
+.theme-banks .box-black-100 > .hd  {
+  color: #ea0437; /* light color */
+}
+
+.theme-banks .tabs-item.starred {
+  background-image: url(../images/star-banks.png);
+}
+
+.theme-banks .splash-in-depth-highlights {
+  background-image: url(../images/splash-in-depth-highlights-banks.png);
+}
+
+
+/* Sub navigation */
+
+.theme-banks .sub-navigation .ul-solutions > li > a {
+  color: #ea0437; /* light color */
+}
+
+.theme-banks .sub-navigation .ul-section > li > a {
+  background-color: #ea0437; /* light color */
+}
+
+
+/* Footer */
+
+.theme-banks .footer-callout {
+  color: #ea0437; /* light color */
+}
+
+.theme-banks .footer-section {
+  background: #ea0437; /* light color */
+}
+
+.theme-banks .footer-section p {
+  color: #fff;
+}
+
+.theme-banks .section-home {
+  background: #8c1713; /* dark color */
+  color: #fff;
+}
+
+.theme-banks .section-link {
+  color: #fff;
+}
+
+.theme-banks .section-solution-title {
+  color: #8c1713; /* dark color */
+}
+
+.theme-banks .section-solution {
+  color: #fff;
+}
+
+.theme-banks .footer-contact-text input.right {
+  background: #8c1713; /* dark color */
+}
+
+.theme-banks .social-signup .submit {
+  background: #8c1713; /* dark color */
+}
+
+
+
+/* ============================================================================
+   Enterprise
+   ========================================================================= */
+
+/*
+Light:  #ffba1e
+Medium: #ecac1c
+Dark:   #bc8916
+*/
+
+
+/* Tags */
+
+.theme-enterprise .box-topics-100 .tag1 {
+  color: #ffba1e; /* light color */
+}
+
+.theme-enterprise .box-topics-100 .tag2 {
+  color: #ecac1c; /* medium color */
+}
+
+.theme-enterprise .box-topics-100 .tag3 {
+  color: #bc8916; /* dark color */
+}
+
+
+/* Icons */
+.theme-enterprise .arrow-right {
+  background-position: 0 -800px;
+}
+
+.theme-enterprise .download {
+  background-position: 0 -820px;
+}
+
+.theme-enterprise .arrow-down {
+  background-position: 0 -840px;
+}
+
+.theme-enterprise .arrow-up {
+  background-position: 0 -860px;
+}
+
+.theme-enterprise .sub-navigation > ul > li > ul > .current > a {
+  background-position: 0 -940px;
+}
+
+.theme-enterprise .sub-navigation > ul > li > ul > li > ul > .current > a {
+  background-position: 0 -980px;
+}
+
+.theme-enterprise .nav-sub li.hover a {
+  background-position: 0 -940px;
+}
+
+.theme-enterprise .arrow-left {
+  background-position: 0 -1040px;
+}
+
+.theme-enterprise .plus {
+  background-position: 0 -1060px;
+}
+
+.theme-enterprise .arrow-down-color {
+  background-position: 0 -80px;
+}
+
+.theme-enterprise .arrow-up-color {
+  background-position: 0 -100px;
+}
+
+
+/* Header image */
+
+.theme-enterprise .header-image {
+  background-color: #ffba1e;
+  background-image: url(../content/enterprise-top.jpg);
+}
+
+.theme-enterprise .header-image-sub {
+  background-color: #ffba1e;
+  background-image: url(../content/enterprise-top-sub.jpg);
+}
+
+.theme-enterprise .intro-cta {
+  margin: 80px 40px 40px 20px;
+}
+
+
+/* Introduction */
+
+.theme-enterprise .intro > .hd {
+  color: #ffba1e; /* light color */
+}
+
+
+/* Entrance */
+
+.theme-enterprise .entrance-tab {
+  background-color: #ce9618;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ecac1c), to(#ce9618)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ecac1c, #ce9618); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #ecac1c, #ce9618); /* FF3.6+ */
+  background-image:     -ms-linear-gradient(top, #ecac1c, #ce9618); /* IE10 */
+  background-image:      -o-linear-gradient(top, #ecac1c, #ce9618); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #ecac1c, #ce9618);
+}
+
+.theme-enterprise .entrance-tab > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* Boxes */
+
+.theme-enterprise .theme-borders {
+  border-color: #ffba1e; /* light color */
+}
+
+.theme-enterprise .box-solution-50 > .hd,
+.theme-enterprise .box-solution-100 > .hd,
+.theme-enterprise .box-black-100 > .hd {
+  color: #ffba1e; /* light color */
+}
+
+.theme-enterprise .tabs-item.starred {
+  background-image: url(../images/star-enterprise.png);
+}
+
+.theme-enterprise .splash-in-depth-highlights {
+  background-image: url(../images/splash-in-depth-highlights-banks.png);
+}
+
+
+/* Sub navigation */
+
+.theme-enterprise .sub-navigation .ul-solutions > li > a {
+  color: #ffba1e; /* light color */
+}
+
+.theme-enterprise .sub-navigation .ul-section > li > a {
+  background-color: #ffba1e; /* light color */
+}
+
+
+/* Footer */
+
+.theme-enterprise .footer-callout {
+  color: #ffba1e; /* light color */
+}
+
+.theme-enterprise .footer-section {
+  background: #ffba1e; /* light color */
+}
+
+.theme-enterprise .footer-section p {
+  color: #fff;
+}
+
+.theme-enterprise .section-home {
+  background: #bc8916; /* dark color */
+  color: #fff;
+}
+
+.theme-enterprise .section-link {
+  color: #fff;
+}
+
+.theme-enterprise .section-solution-title {
+  color: #bc8916; /* dark color */
+}
+
+.theme-enterprise .section-solution {
+  color: #fff;
+}
+
+.theme-enterprise .footer-contact-text input.right {
+  background: #bc8916; /* dark color */
+}
+
+.theme-enterprise .social-signup .submit {
+  background: #bc8916; /* dark color */
+}
+
+
+
+/* ============================================================================
+   Government
+   ========================================================================= */
+
+/*
+Light:  #12ad2b
+Medium: #11a028
+Dark:   #0c781e
+*/
+
+
+/* Tags */
+
+.theme-government .box-topics-100 .tag1 {
+  color: #12ad2b; /* light color */
+}
+
+.theme-government .box-topics-100 .tag2 {
+  color: #11a028; /* medium color */
+}
+
+.theme-government .box-topics-100 .tag3 {
+  color: #0c781e; /* dark color */
+}
+
+
+/* Icons */
+
+.theme-government .arrow-right {
+  background-position: 0 -1200px;
+}
+
+.theme-government .download {
+  background-position: 0 -1220px;
+}
+
+.theme-government .arrow-down {
+  background-position: 0 -1240px;
+}
+
+.theme-government .arrow-up {
+  background-position: 0 -1260px;
+}
+
+.theme-government .sub-navigation > ul > li > ul > .current > a {
+  background-position: 0 -1340px;
+}
+
+.theme-government .sub-navigation > ul > li > ul > li > ul > .current > a {
+  background-position: 0 -1380px;
+}
+
+.theme-government .nav-sub li.hover a {
+  background-position: 0 -1340px;
+}
+
+.theme-government .arrow-left {
+  background-position: 0 -1440px;
+}
+
+.theme-government .plus {
+  background-position: 0 -1460px;
+}
+
+.theme-government .arrow-down-color {
+  background-position: 0 -120px;
+}
+
+.theme-government .arrow-up-color {
+  background-position: 0 -140px;
+}
+
+
+/* Header image */
+
+.theme-government .header-image {
+  background-color: #12ad2b;
+  background-image: url(../content/government-top.jpg);
+}
+
+.theme-government .header-image-sub {
+  background-color: #12ad2b;
+  background-image: url(../content/government-top-sub.jpg);
+
+}
+
+.theme-government .intro-cta {
+  margin: 80px 40px 40px 20px;
+}
+
+
+/* Introduction */
+
+.theme-government .intro > .hd {
+  color: #12ad2b; /* light color */
+}
+
+
+/* Entrance */
+
+.theme-government .entrance-tab {
+  background-color: #109725;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#12ad2b), to(#109725)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #12ad2b, #109725); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #12ad2b, #109725); /* FF3.6+ */
+  background-image:     -ms-linear-gradient(top, #12ad2b, #109725); /* IE10 */
+  background-image:      -o-linear-gradient(top, #12ad2b, #109725); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #12ad2b, #109725);
+}
+
+.theme-government .entrance-tab > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* Boxes */
+
+.theme-government .theme-borders {
+  border-color: #12ad2b; /* light color */
+}
+
+.theme-government .box-solution-50 > .hd,
+.theme-government .box-solution-100 > .hd,
+.theme-government .box-black-100 > .hd {
+  color: #12ad2b; /* light color */
+}
+
+.theme-government .tabs-item.starred {
+  background-image: url(../images/star-government.png);
+}
+
+.theme-government .splash-in-depth-highlights {
+  background-image: url(../images/splash-in-depth-highlights-government.png);
+}
+
+
+/* Sub navigation */
+
+.theme-government .sub-navigation .ul-solutions > li > a {
+  color: #12ad2b; /* light color */
+}
+
+.theme-government .sub-navigation .ul-section > li > a {
+  background-color: #12ad2b; /* light color */
+}
+
+/* Footer */
+.theme-government .footer-callout {
+  color: #12ad2b; /* light color */
+}
+
+.theme-government .footer-section {
+  background: #12ad2b; /* light color */
+}
+
+.theme-government .footer-section p {
+  color: #fff;
+}
+
+.theme-government .section-home {
+  background: #0c781e; /* dark color */
+  color: #fff;
+}
+
+.theme-government .section-link {
+  color: #fff;
+}
+
+.theme-government .section-solution-title {
+  color: #0c781e; /* dark color */
+}
+
+.theme-government .section-solution {
+  color: #fff;
+}
+
+.theme-government .footer-contact-text input.right {
+  background: #0c781e; /* dark color */
+}
+
+.theme-government .social-signup .submit {
+  background: #0c781e; /* dark color */
+}
+
+
+
+/* ============================================================================
+   Machine to Machine
+   ========================================================================= */
+
+/*
+Light:  #adadad
+Medium: #818181
+Dark:   #373737
+*/
+
+
+/* Tags */
+
+.theme-m2m .box-topics-100 .tag1 {
+  color: #adadad; /* light color */
+}
+
+.theme-m2m .box-topics-100 .tag2 {
+  color: #818181; /* medium color */
+}
+
+.theme-m2m .box-topics-100 .tag3 {
+  color: #373737; /* dark color */
+}
+
+
+/* Icons */
+
+.theme-m2m .arrow-right {
+  background-position: 0 -1600px;
+}
+
+.theme-m2m .download {
+  background-position: 0 -1620px;
+}
+
+.theme-m2m .arrow-down {
+  background-position: 0 -1640px;
+}
+
+.theme-m2m .arrow-up {
+  background-position: 0 -1660px;
+}
+
+.theme-m2m .sub-navigation > ul > li > ul > .current > a {
+  background-position: 0 -1740px;
+}
+
+.theme-m2m .sub-navigation > ul > li > ul > li > ul > .current > a {
+  background-position: 0 -1780px;
+}
+
+.theme-m2m .arrow-left {
+  background-position: 0 -1840px;
+}
+
+.theme-m2m .plus {
+  background-position: 0 -1860px;
+}
+
+.theme-m2m .nav-sub li.hover a {
+  background-position: 0 -1740px;
+}
+
+.theme-m2m .arrow-down-color {
+  background-position: 0 -160px;
+}
+
+.theme-m2m .arrow-up-color {
+  background-position: 0 -180px;
+}
+
+
+/* Header image */
+
+.theme-m2m .header-image {
+  background-color: #adadad;
+  background-image: url(../content/m2m-top.jpg);
+}
+
+.theme-m2m .header-image-sub {
+  background-color: #adadad;
+  background-image: url(../content/m2m-top-sub.jpg);
+}
+
+.theme-m2m .intro-cta {
+  margin: 80px 40px 40px 20px;
+}
+
+
+/* Introduction */
+
+.theme-m2m .intro > .hd {
+  color: #adadad; /* light color */
+}
+
+
+/* Entrance */
+
+.theme-m2m .entrance-tab {
+  background-color: #7d7d7d;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7d7d7d), to(#6d6d6d)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #7d7d7d, #6d6d6d); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #7d7d7d, #6d6d6d); /* FF3.6+ */
+  background-image:     -ms-linear-gradient(top, #7d7d7d, #6d6d6d); /* IE10 */
+  background-image:      -o-linear-gradient(top, #7d7d7d, #6d6d6d); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #7d7d7d, #6d6d6d);
+}
+
+.theme-m2m .entrance-tab > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* Boxes */
+
+.theme-m2m .theme-borders {
+  border-color: #adadad; /* light color */
+}
+
+.theme-m2m .box-solution-50 > .hd,
+.theme-m2m .box-solution-100 > .hd,
+.theme-m2m .box-black-100 > .hd {
+  color: #adadad; /* light color */
+}
+
+.theme-m2m .tabs-item.starred {
+  background-image: url(../images/star-m2m.png);
+}
+
+.theme-m2m .splash-in-depth-highlights {
+  background-image: url(../images/splash-in-depth-highlights-m2m.png);
+}
+
+
+/* Sub navigation */
+
+.theme-m2m .sub-navigation .ul-solutions > li > a {
+  color: #adadad; /* light color */
+}
+
+.theme-m2m .sub-navigation .ul-section > li > a {
+  background-color: #adadad; /* light color */
+}
+
+
+/* Footer */
+
+.theme-m2m .footer-callout {
+  color: #adadad; /* light color */
+}
+
+.theme-m2m .footer-section {
+  background: #adadad; /* light color */
+}
+
+.theme-m2m .footer-section p {
+  color: #fff;
+}
+
+.theme-m2m .section-home {
+  background: #373737; /* dark color */
+  color: #fff;
+}
+
+.theme-m2m .section-link {
+  color: #fff;
+}
+
+.theme-m2m .section-solution-title {
+  color: #373737; /* dark color */
+}
+
+.theme-m2m .section-solution {
+  color: #fff;
+}
+
+.theme-m2m .footer-contact-text input.right {
+  background: #373737; /* dark color */
+}
+
+.theme-m2m .social-signup .submit {
+  background: #373737; /* dark color */
+}
+
+
+
+/* ============================================================================
+   Telecommunications
+   ========================================================================= */
+
+/*
+Light:  #0092c7
+Medium: #0078a4
+Dark:   #005878
+*/
+
+
+/* Tags */
+
+.theme-telecom .box-topics-100 .tag1 {
+  color: #0092c7; /* light color */
+}
+
+.theme-telecom .box-topics-100 .tag2 {
+  color: #0078a4; /* medium color */
+}
+
+.theme-telecom .box-topics-100 .tag3 {
+  color: #005878; /* dark color */
+}
+
+
+/* Icons */
+
+.theme-telecom .arrow-right {
+  background-position: 0 -2000px;
+}
+
+.theme-telecom .download {
+  background-position: 0 -2020px;
+}
+
+.theme-telecom .arrow-down {
+  background-position: 0 -2040px;
+}
+
+.theme-telecom .arrow-up {
+  background-position: 0 -2060px;
+}
+
+.theme-telecom .sub-navigation > ul > li > ul > .current > a {
+  background-position: 0 -2140px;
+}
+
+.theme-telecom .sub-navigation > ul > li > ul > li > ul > .current > a {
+  background-position: 0 -2180px;
+}
+
+.theme-telecom .arrow-left {
+  background-position: 0 -2240px;
+}
+
+.theme-telecom .plus {
+  background-position: 0 -2260px;
+}
+
+.theme-telecom .nav-sub li.hover a {
+  background-position: 0 -2140px;
+}
+
+.theme-telecom .arrow-down-color {
+  background-position: 0 -200px;
+}
+
+.theme-telecom .arrow-up-color {
+  background-position: 0 -220px;
+}
+
+
+/* Header image */
+
+.theme-telecom .header-image {
+  background-color: #0092c7;
+  background-image: url(../content/telecom-top.jpg);
+}
+
+.theme-telecom .header-image-sub {
+  background-color: #0092c7;
+  background-image: url(../content/telecom-top-sub.jpg);
+}
+
+.theme-telecom .intro-cta {
+  margin: 80px 40px 40px 20px;
+}
+
+
+/* Introduction */
+
+.theme-telecom .intro > .hd {
+  color: #0092c7; /* light color */
+}
+
+
+/* Entrance */
+
+.theme-telecom .entrance-tab {
+  background-color: #007fae;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0092c7), to(#007fae)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #0092c7, #007fae); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #0092c7, #007fae); /* FF3.6+ */
+  background-image:     -ms-linear-gradient(top, #0092c7, #007fae); /* IE10 */
+  background-image:      -o-linear-gradient(top, #0092c7, #007fae); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #0092c7, #007fae);
+}
+
+.theme-telecom .entrance-tab > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* Boxes */
+
+.theme-telecom .theme-borders {
+  border-color: #0092c7; /* light color */
+}
+
+.theme-telecom .box-solution-50 > .hd,
+.theme-telecom .box-solution-100 > .hd,
+.theme-telecom .box-black-100 > .hd {
+  color: #0092c7; /* light color */
+}
+
+.theme-telecom .tabs-item.starred {
+  background-image: url(../images/star-telecom.png);
+}
+
+.theme-telecom .splash-in-depth-highlights {
+  background-image: url(../images/splash-in-depth-highlights-telecom.png);
+}
+
+
+/* Sub navigation */
+
+.theme-telecom .sub-navigation .ul-solutions > li > a {
+  color: #0092c7; /* light color */
+}
+
+.theme-telecom .sub-navigation .ul-section > li > a {
+  background-color: #0092c7; /* light color */
+}
+
+
+/* Footer */
+
+.theme-telecom .footer-callout {
+  color: #0092c7; /* light color */
+}
+
+.theme-telecom .footer-section {
+  background: #0092c7; /* light color */
+}
+
+.theme-telecom .footer-section p {
+  color: #fff;
+}
+
+.theme-telecom .section-home {
+  background: #005878; /* dark color */
+  color: #fff;
+}
+
+.theme-telecom .section-link {
+  color: #fff;
+}
+
+.theme-telecom .section-solution-title {
+  color: #005878; /* dark color */
+}
+
+.theme-telecom .section-solution {
+  color: #fff;
+}
+
+.theme-telecom .footer-contact-text input.right {
+  background: #005878; /* dark color */
+}
+
+.theme-telecom .social-signup .submit {
+  background: #005878; /* dark color */
+}
+
+
+
+/* ============================================================================
+   Transport
+   ========================================================================= */
+
+/*
+Light:  #31b5b7
+Medium: #2a999b
+Dark:   #1d6a6b
+*/
+
+
+/* Tags */
+
+.theme-transport .box-topics-100 .tag1 {
+  color: #31b5b7; /* light color */
+}
+
+.theme-transport .box-topics-100 .tag2 {
+  color: #2a999b; /* medium color */
+}
+
+.theme-transport .box-topics-100 .tag3 {
+  color: #1d6a6b; /* dark color */
+}
+
+
+/* Icons */
+
+.theme-transport .arrow-right {
+  background-position: 0 -2400px;
+}
+
+.theme-transport .download {
+  background-position: 0 -2420px;
+}
+
+.theme-transport .arrow-down {
+  background-position: 0 -2440px;
+}
+
+.theme-transport .arrow-up {
+  background-position: 0 -2460px;
+}
+
+.theme-transport .sub-navigation > ul > li > ul > .current > a {
+  background-position: 0 -2540px;
+}
+
+.theme-transport .nav-sub li.hover a {
+  background-position: 0 -2540px;
+}
+
+.theme-transport .sub-navigation > ul > li > ul > li > ul > .current > a {
+  background-position: 0 -2580px;
+}
+
+.theme-transport .arrow-left {
+  background-position: 0 -2640px;
+}
+
+.theme-transport .plus {
+  background-position: 0 -2660px;
+}
+
+.theme-transport .arrow-down-color {
+  background-position: 0 -240px;
+}
+
+.theme-transport .arrow-up-color {
+  background-position: 0 -260px;
+}
+
+
+/* Header image */
+
+.theme-transport .header-image {
+  background-color: #31b5b7;
+  background-image: url(../content/transport-top.jpg);
+}
+
+.theme-transport .header-image-sub {
+  background-color: #31b5b7;
+  background-image: url(../content/transport-top-sub.jpg);
+}
+
+.theme-transport .intro-cta {
+  margin: 80px 40px 40px 20px;
+}
+
+
+/* Introduction */
+
+.theme-transport .intro > .hd {
+  color: #31b5b7; /* light color */
+}
+
+
+/* Entrance */
+
+.theme-transport .entrance-tab {
+  background-color: #2a999b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2a999b), to(#258587)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #2a999b, #258587); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #2a999b, #258587); /* FF3.6+ */
+  background-image:     -ms-linear-gradient(top, #2a999b, #258587); /* IE10 */
+  background-image:      -o-linear-gradient(top, #2a999b, #258587); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #2a999b, #258587);
+}
+
+.theme-transport .entrance-tab > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+/* Boxes */
+
+.theme-transport .theme-borders {
+  border-color: #31b5b7; /* light color */
+}
+
+.theme-transport .box-solution-50 > .hd,
+.theme-transport .box-solution-100 > .hd,
+.theme-transport .box-black-100 > .hd {
+  color: #31b5b7; /* light color */
+}
+
+.theme-transport .tabs-item.starred {
+  background-image: url(../images/star-transport.png);
+}
+
+.theme-transport .splash-in-depth-highlights {
+  background-image: url(../images/splash-in-depth-highlights-transport.png);
+}
+
+
+/* Sub navigation */
+
+.theme-transport .sub-navigation .ul-solutions > li > a {
+  color: #31b5b7; /* light color */
+}
+
+.theme-transport .sub-navigation .ul-section > li > a {
+  background-color: #31b5b7; /* light color */
+}
+
+
+/* Footer */
+
+.theme-transport .footer-callout {
+  color: #31b5b7; /* light color */
+}
+
+.theme-transport .footer-section {
+  background: #31b5b7; /* light color */
+}
+
+.theme-transport .footer-section p {
+  color: #fff;
+}
+
+.theme-transport .section-home {
+  background: #1d6a6b; /* dark color */
+  color: #fff;
+}
+
+.theme-transport .section-link {
+  color: #fff;
+}
+
+.theme-transport .section-solution-title {
+  color: #1d6a6b; /* dark color */
+}
+
+.theme-transport .section-solution {
+  color: #fff;
+}
+
+.theme-transport .footer-contact-text input.right {
+  background: #1d6a6b; /* dark color */
+}
+
+.theme-transport .social-signup .submit {
+  background: #1d6a6b; /* dark color */
+}

@@ -1,0 +1,142 @@
+/*
+
+REGIONS.CSS
+
+- Set images used on headers for regional web sites
+
+*/
+
+
+/* ============================================================================
+   France
+   ========================================================================= */
+   
+.theme-france .home-header-image {
+  background: #000 url(/france/images/home-top-FR.jpg) center 0 no-repeat;
+  height: 470px;
+  width: 100%;
+  min-width: 1024px;
+  position: absolute;
+}
+
+.theme-france .home-header-image.image2 {
+  background: #000 url("/france/images/home-top-2-FR.jpg") center 0 no-repeat;
+}
+
+.theme-france .home-header-image.image3 {
+  background: #000 url(/france/images/home-top-3-FR.jpg) center 0 no-repeat;
+}
+
+.theme-france .home-header-image.image4 {
+  background: #000 url(/france/images/home-top-4-FR.jpg) center 0 no-repeat;
+}
+
+/* ============================================================================
+   Deutschland
+   ========================================================================= */
+   
+.theme-de .home-header-image {
+  background: #000 url(/deutschland/images/home-top-DE.jpg) center 0 no-repeat;
+  height: 470px;
+  width: 100%;
+  min-width: 1024px;
+  position: absolute;
+}
+
+.theme-de .home-header-image.image2 {
+  background: #000 url(/deutschland/images/home-top-2-DE.jpg) center 0 no-repeat;
+}
+
+.theme-de .home-header-image.image3 {
+  background: #000 url(/deutschland/images/home-top-3-DE.jpg) center 0 no-repeat;
+}
+
+.theme-de .home-header-image.image4 {
+  background: #000 url(/deutschland/images/home-top-4-DE.jpg) center 0 no-repeat;
+}
+
+.theme-de .social-follow {
+  margin-left: 70%
+}
+
+/* ============================================================================
+   Brasil
+   ========================================================================= */
+   
+.theme-br .home-header-image {
+  background: #000 url(/brasil/images/home-top-BR.jpg) center 0 no-repeat;
+  height: 470px;
+  width: 100%;
+  min-width: 1024px;
+  position: absolute;
+}
+
+.theme-br .home-header-image.image2 {
+  background: #000 url(/brasil/images/home-top-2-BR.jpg) center 0 no-repeat;
+}
+
+.theme-br .home-header-image.image3 {
+  background: #000 url(/brasil/images/home-top-3-BR.jpg) center 0 no-repeat;
+}
+
+.theme-br .home-header-image.image4 {
+  background: #000 url(/brasil/images/home-top-4-BR.jpg) center 0 no-repeat;
+}
+
+/* ============================================================================
+   Latam
+   ========================================================================= */
+   
+.theme-es .home-header-image {
+  background: #000 url(/latam/images/home-top-ES.jpg) center 0 no-repeat;
+  height: 470px;
+  width: 100%;
+  min-width: 1024px;
+  position: absolute;
+}
+
+.theme-es .home-header-image.image2 {
+  background: #000 url(/latam/images/home-top-2-ES.jpg) center 0 no-repeat;
+}
+
+.theme-es .home-header-image.image3 {
+  background: #000 url(/latam/images/home-top-3-ES.jpg) center 0 no-repeat;
+}
+
+.theme-es .home-header-image.image4 {
+  background: #000 url(/latam/images/home-top-4-ES.jpg) center 0 no-repeat;
+}
+
+/* Used to move pull-down menus below the corresponding menu */
+.theme-es .nav-info-box.nav-about {
+  margin-left: -170px;
+}
+
+.theme-es .nav-info-box.nav-contact-us {
+  margin-left: 150px;
+}
+
+
+/* ============================================================================
+   China
+   ========================================================================= */
+   
+.theme-cn .home-header-image {
+  background: #000 url(/china/images/home-top-CN.jpg) center 0 no-repeat;
+  height: 470px;
+  width: 100%;
+  min-width: 1024px;
+  position: absolute;
+}
+
+.theme-cn .home-header-image.image2 {
+  background: #000 url(/china/images/home-top-2-CN.jpg) center 0 no-repeat;
+}
+
+.theme-cn .home-header-image.image3 {
+  background: #000 url(/china/images/home-top-3-CN.jpg) center 0 no-repeat;
+}
+
+.theme-cn .home-header-image.image4 {
+  background: #000 url(/china/images/home-top-4-CN.jpg) center 0 no-repeat;
+}
